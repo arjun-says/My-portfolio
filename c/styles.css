@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .book {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .page {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform-origin: right;
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+  }
+  
+  .page.left {
+    left: 0;
+    transform-origin: left;
+  }
+  
+  .page.right {
+    right: 0;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  button {
+    position: absolute;
+    top: 80%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #prev-button {
+    left: 30%;
+  }
+  
+  #next-button {
+    right: 30%;
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Notebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="book-container">
+    <div id="book">
+      <div class="page cover">Notebook Cover<br><small>Click to Open</small></div>
+      <div class="page" contenteditable="true">Write your notes here...</div>
+      <div class="page" contenteditable="true">Page 2: Your Content...</div>
+      <div class="page" contenteditable="true">Page 3: Your Ideas...</div>
+      <div class="page" contenteditable="true">Page 4: To-Do List...</div>
+      <div class="page">The End</div>
+    </div>
+    <div id="controls">
+      <button id="prev">Previous</button>
+      <span id="page-info">Page 1 of 5</span>
+      <button id="next">Next</button>
+      <button id="download">Download PDF</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
